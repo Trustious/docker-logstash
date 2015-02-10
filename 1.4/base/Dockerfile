@@ -15,8 +15,5 @@ RUN /opt/logstash/bin/plugin install contrib
 RUN mkdir /app
 ADD . /app
 
-# Kibana
-EXPOSE 9292
-
 # Start logstash
 ENTRYPOINT ["/app/bin/boot"]
