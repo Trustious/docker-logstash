@@ -16,4 +16,4 @@ RUN mkdir /app
 ADD . /app
 
 # Start logstash
-ENTRYPOINT ["/app/bin/boot"]
+CMD ["/app/bin/boot"]
